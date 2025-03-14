@@ -38,19 +38,19 @@ function App() {
     <div className="">
       {!hideNavbarFooter && <Navbar />}
       <Routes>
-        <Route exact path="/" element={token ? <Home /> : <Navigate to={'/login'} />} />
-        <Route exact path="/blogs" element={<Blogs />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/creators" element={<Creators />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
-        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route  path="/" element={token ? <Home /> : <Navigate to={'/login'} />} />
+        <Route  path="/blogs" element={<Blogs />} />
+        <Route  path="/about" element={<About />} />
+        <Route  path="/contact" element={<Contact />} />
+        <Route  path="/creators" element={<Creators />} />
+        <Route  path="/login" element={<Login />} />
+        <Route  path="/register" element={<Register />} />
+        <Route  path="/dashboard" element={<Dashboard />} />
 
-        <Route exact path='/blogs/update/:id' element={<Update />} />
-        <Route exact path='/blogs/:id' element={<Detail />} />
+        <Route  path='/blogs/update/:id' element={<Update />} />
+        <Route  path='/blogs/:id' element={<Detail />} />
 
-        <Route exact path='*' element={<Notfound />} />
+        <Route  path='*' element={<Notfound />} />
       </Routes>
       <Toaster />
       {!hideNavbarFooter && <Footer />}
